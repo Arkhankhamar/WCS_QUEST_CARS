@@ -15,8 +15,6 @@ st.header('Bienvenue sur la quête "voitures"')
 
 
 with st.sidebar:
-    st.header("Options")
-    st.image('./header.png')
     choix_cols = st.multiselect("Choix des pays",list(df['continent'].unique()))
     choix_cols = st.multiselect("Choix nombre de cylindres", list(df['cylinders'].unique()))
 
